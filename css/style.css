@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 81.25%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+section {
+    margin-top: 100px;
+}
+
+/* Header style here */
+
+/* Navber */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 16.63px;
+}
+
+.nav-logo h1 {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav-logo span {
+    color: #FF5400;
+}
+
+.nav-items {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-items .home a {
+    color: #FF5400;
+}
+
+.nav-items li {
+    list-style-type: none;
+}
+
+.nav-items li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #424247;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 24px;
+    display: none;
+}
+
+/* Banner */
+
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 16px;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+    padding: 106px 0 24px 0;
+}
+
+.banner-description {
+    color: #FFF;
+    width: 676px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 0 48px 0;
+}
+
+.search-box {
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    width: 800px;
+    padding: 16px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.search-box input {
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: 0;
+}
+
+.search-box input:focus {
+    border: 2px solid #FF5400;
+}
+
+.search-box select {
+    background-image: url(../Images/download.svg);
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-size: auto 35%;
+    border: none;
+    padding: 16px;
+    outline: 0;
+    appearance: none;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search-box select:focus {
+    border: 2px solid #FF5400;
+}
+
+.search-box button {
+    background-color: #FF5400;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-box button i {
+    font-size: 24px;
+}
+/* Header End here */
+
+/* Popular tours style here */
+
+.our-popular-tours {
+    display: flex;
+    gap: 53px;
+}
+
+.tours-text h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.tours-text p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 24px 0;
+    text-align: start;
+}
+
+.tours-text ul {
+    margin-left: 20px;
+    width: 80%;
+}
+
+.tours-text li {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 16px;
+}
+
+.tours-text button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    padding: 14px 35px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Choose Your Destination style here */
+
+.destination-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.destination-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 24px 0 48px 0;
+}
+
+.destination-place {
+    display: grid;
+    gap: 24px;
+    grid-template-areas:
+        "Maldives Maldives Maldives Maldives Maldives Maldives Indonesia Indonesia Indonesia Indonesia Indonesia Indonesia"
+        "Srilanka Srilanka Srilanka Srilanka North-America North-America North-America North-America North-America Kashmir Kashmir Kashmir"
+        "Bangladesh Bangladesh Bangladesh Bangladesh Bangladesh Bandarban Bandarban Bandarban Bandarban Bandarban Bandarban Bandarban"
+    ;
+}
+
+.places img {
+    width: 100%;
+}
+
+.place-img-1 {
+    grid-area: Maldives;
+}
+
+.place-img-2 {
+    grid-area: Indonesia;
+}
+
+.place-img-3 {
+    grid-area: Srilanka;
+}
+
+.place-img-4 {
+    grid-area: North-America;
+}
+
+.place-img-5 {
+    grid-area: Kashmir;
+}
+
+.place-img-6 {
+    grid-area: Bangladesh;
+}
+
+.place-img-7 {
+    grid-area: Bandarban;
+}
+
+.places {
+    position: relative;
+}
+
+.places h3 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* why-choose-us section style*/
+
+.why-choose-us h1 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.why-choose-us p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 24px 0 48px 0;
+}
+
+.our-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.service-1 {
+    width: 48%;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.service-2 {
+    width: 49%;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.service-3 {
+    width: 50%;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.service {
+    padding: 32px 32px 0 32px;
+}
+
+.service h3 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    padding-top: 30px;
+    text-align: start;
+}
+
+.service p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: start;
+}
+ 
+/* Newsletter style here */
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.newsletter-text {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #FF5400;
+    padding: 45px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.newsletter-text input {
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 16px 0 16px 20px;
+    border: none;
+    margin-bottom: 16px;
+    outline: 0;
+}
+
+.newsletter-text input:focus {
+    border: 2px solid #FF5400;
+}
+
+.newsletter-text .news-btn {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 14px 0;
+    border: none;
+    background-color: #FF5400;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.newsletter-text h1 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.newsletter-text p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 16px 0 24px 0;
+}
+
+.newsletter-img {
+    position: relative;
+    width: 100%;
+}
+
+.newsletter-img img {
+    width: 100%;
+    height: 412px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.news-discount-btn {
+    position: absolute;
+    transform: rotate(-30deg);
+    right: 0;
+    bottom: 67px;
+}
+
+
+.news-discount-btn button {
+    border-radius: 16px;
+    background: #FF5400;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    border: none;
+    padding: 15px 30px;
+}
+
+.news-discount-btn button a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* review style here */
+
+.review-titel {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.review-all {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.review-user {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.user-text h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.user-text p {
+    color: #2f2f37;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.see-more {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 35px;
+    gap: 10px;
+    color: #FF5400;
+    font-weight: 700;
+}
+
+/* Footer style here */
+footer {
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+.foot-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16.63px;
+    text-align: center;
+}
+
+.foot-logo h1 {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.foot-logo span {
+    color: #FF5400;
+}
+
+.footer p {
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 12px;
+}
+
+.foot-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    gap: 20px;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+}
+
+.foot-icon i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.footer .foot-sm {
+    color: #131318;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+/* Responsive small devices */
+
+@media screen and (max-width: 600px) {
+
+    /* Header */
+
+    section {
+        margin-top: 24px
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .nav-logo {
+        gap: 8px;
+    }
+
+    .nav-logo img {
+        width: 20%;
+    }
+
+    .nav-logo h1 {
+        font-size: 21.5px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* Banner */
+
+    .banner {
+        background-size: 210% 100%;
+        background-position: 50%;
+        height: 550px;
+    }
+
+    .banner-title {
+        font-size: 22px;
+        padding-top: 32px;
+    }
+
+    .banner-description {
+        font-size: 14px;
+        width: 90%;
+        line-height: 21px;
+        text-align: start;
+    }
+
+    .search-box {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    /* popular tours  */
+
+    .our-popular-tours {
+        margin: 25px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .tours-text h1 {
+        font-size: 20px;
+    }
+
+    .tours-text p {
+        font-size: 14px;
+        padding: 16px 0;
+    }
+
+    .tours-text li {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+
+    .popular-tours-img img {
+        width: 100%;
+    }
+
+    /* Destination section */
+
+    .destination-place {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .destination-title {
+        font-size: 20px;
+    }
+
+    .destination-description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 16px 0;
+    }
+
+    .places img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .places h3 {
+        font-size: 20px;
+    }
+
+    /* why-choose-us section style*/
+
+    .why-choose-us h1 {
+        font-size: 20px;
+    }
+
+    .why-choose-us p {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service h3 {
+        font-size: 20px;
+        padding-top: 16px;
+    }
+
+    .service p {
+        font-size: 14px;
+    }
+    
+    /* Newsletter */
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter-text {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .newsletter-text h1 {
+        font-size: 20px;
+    }
+
+    .newsletter-text p {
+        font-size: 14px;
+    }
+
+    .newsletter-img img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .news-discount-btn {
+        position: absolute;
+        transform: rotate(-30deg);
+        right: 0;
+        bottom: 48px;
+    }
+
+    .news-discount-btn button {
+        border-radius: 16px;
+        background: #FF5400;
+        color: #FFF;
+        font-size: 21px;
+        font-weight: 800;
+        border: none;
+        padding: 15px 30px;
+    }
+
+    .news-discount-btn button a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 33px 0;
+        margin-top: 50px;
+    }
+
+    .foot-logo {
+        gap: 8px;
+    }
+
+    .foot-logo h1 {
+        font-size: 21px;
+    }
+
+    .foot-logo img {
+        height: 33px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .footer .foot-sm {
+        font-size: 12px;
+        margin-top: 24px;
+    }
+}
